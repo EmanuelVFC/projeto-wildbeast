@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labrador</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{ grid-area: cabecalho;}
+        nav{ grid-area: navegacao;}
+        main{ grid-area: conteudo;}
+        aside{ grid-area: lateral;}
+        footer{ grid-area: rodape;}
+
+        .est{
+            border: solid 1px dodgerblue;
+            text-align: center;
+        }
+
+        body{
+            display: grid;
+            min-height: 100vh;
+            grid-template-columns: 60px 1fr 60px;
+            grid-template-rows: 60px 1fr 60px;
+            grid-template-areas:
+                'cabecalho cabecalho cabecalho'
+                'navegacao conteudo lateral'
+                'navegacao rodape rodape'
+            ;
+        }
+    </style>
+</head>
+<body>
+    <header class="est">CABECALHO</header>  
+    <nav class="est">NAVEGACAO</nav> 
+    <main class="est">CONTEUDO</main>
+    <aside class="est">LATERAL</aside>
+    <footer class="est">RODAPE</footer>
+</body>
+</html>
