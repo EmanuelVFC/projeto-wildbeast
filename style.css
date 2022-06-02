@@ -8,31 +8,6 @@
     font-family: 'Vollkorn', serif;
 }
 
-@media (max-width: 1200px){
-    .estrutura{
-        grid-template-columns: minmax(160px, 1fr) 3fr;
-        grid-template-areas: 
-            'header header'
-            'sidenav content'
-            'sidenav anuncios'
-            'rodape rodape'
-        ;
-    }
-}
-
-@media (max-width: 760px){
-    .estrutura{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            'header'
-            'sidenav'
-            'content'
-            'anuncios'
-            'rodape'
-        ;
-    }
-}
-
 /* GRID GERAL */
 
 .estrutura{
@@ -56,20 +31,6 @@ ul{
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-}
-
-@media (max-width: 760px){
-    .header{
-        grid-template-columns: auto;
-    }
-    
-    .logo{
-        margin-bottom: 20px;
-    }
-
-    .header nav a{
-        font-size: 1em;
-    }
 }
 
 .titulo{
@@ -226,13 +187,6 @@ ul{
     background-color: #B07BFB;
 }
 
-@media only screen and (max-width: 760px){
-    .sidenav a{
-        display: inline-block;
-        overflow-x: scroll;
-    }
-}
-
 .content{
     grid-area: content;
     max-width: 900px;
@@ -293,4 +247,50 @@ img{
 
 .rodape p{
     color: white;
+}
+
+@media (max-width: 1200px){
+    .estrutura{
+        grid-template-columns: minmax(160px, 1fr) 3fr;
+        grid-template-areas: 
+            'header header'
+            'sidenav content'
+            'sidenav anuncios'
+            'rodape rodape'
+        ;
+    }
+}
+
+@media (max-width: 760px){
+    .estrutura{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'header'
+            'sidenav'
+            'content'
+            'anuncios'
+            'rodape'
+        ;
+    }
+}
+
+@media (max-width: 760px){
+    .header{
+        grid-template-columns: auto;
+    }
+    
+    .logo{
+        margin-bottom: 20px;
+    }
+
+    .header nav a{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 760px){
+    .sidenav a{
+        display: inline-block;
+        overflow-x: scroll;
+    }
 }
