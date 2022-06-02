@@ -289,8 +289,8 @@ img{
 }
 
 @media (max-width: 760px){
-    .sidenav a{
-        display: inline-block;
+    .sidenav ul{
+        display: flex;
         overflow-x: scroll;
     }
 }
