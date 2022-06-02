@@ -326,7 +326,6 @@ img{
         overflow-x: scroll;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
-        animation: seta 0.5s ease-in 0s infinite alternate;
     }
 
     .sidenav::after{
@@ -335,6 +334,7 @@ img{
         top: 5px;
         right: 30px;
         color: rgb(0, 0, 0, .3);
+        animation: seta 0.5s ease-in 0s infinite alternate;
     }
 
     .sidenav li a{
