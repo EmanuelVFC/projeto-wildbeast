@@ -22,6 +22,7 @@
 
 @media (max-width: 760px){
     .estrutura{
+        grid-template-columns: 1fr;
         grid-template-areas: 
             'header'
             'sidenav'
@@ -29,10 +30,6 @@
             'anuncios'
             'rodape'
         ;
-    }
-
-    .header{
-        overflow-x: scroll;
     }
 }
 
@@ -213,6 +210,13 @@ ul{
 
 .sidenav li a:hover{
     background-color: #B07BFB;
+}
+
+@media (max-width: 760px){
+    .sidenav a{
+        display: inline-block;
+        overflow-x: scroll;
+    }
 }
 
 .content{
