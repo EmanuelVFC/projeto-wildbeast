@@ -8,6 +8,34 @@
     font-family: 'Vollkorn', serif;
 }
 
+@media (max-width: 1200px){
+    .estrutura{
+        grid-template-columns: minmax(160px, 1fr) 3fr;
+        grid-template-areas: 
+            'header header'
+            'sidenav content'
+            'sidenav anuncios'
+            'rodape rodape'
+        ;
+    }
+}
+
+@media (max-width: 760px){
+    .estrutura{
+        grid-template-areas: 
+            'header'
+            'sidenav'
+            'content'
+            'anuncios'
+            'rodape'
+        ;
+    }
+
+    .header{
+        overflow-x: scroll;
+    }
+}
+
 /* GRID GERAL */
 
 .estrutura{
@@ -91,6 +119,52 @@ ul{
     top: 2px;
 }
 
+.destaque{
+    font-size: 0.875em;
+    color: #B07DFB;
+    max-width: 16em;
+}
+
+.citacao, .atributos{
+    align-self: start;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(44, 44, 44, 0.15);
+    background-image: linear-gradient(135deg, #8844ee, #B07DFB);
+    color: white;
+}
+
+.citacao p{
+    font-size: 1.5em;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.atributos{
+    padding: 30px;
+}
+
+.atributos li{
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.125em;
+}
+
+.atributos li + li{
+    border-top: solid 2px rgba(255, 255, 255, 0.2);
+}
+
+.img3{
+    margin: 0 auto;
+    width: 100%;
+}
+
 .logo{
     max-width: 200px;
 }
@@ -159,7 +233,7 @@ ul{
 }
 
 .img1{
-    align-self: end;
+    align-self: start;
 }
 
 .img2{
@@ -195,7 +269,10 @@ img{
     grid-area: rodape;
     background-image: linear-gradient(to right, #8B48EF, #AE7AFA);
     padding: 40px;
-    color: white;
     font-size: 1.2em;
     text-align: center;
+}
+
+.rodape p{
+    color: white;
 }
