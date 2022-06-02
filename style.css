@@ -58,6 +58,20 @@ ul{
     align-items: center;
 }
 
+@media (max-width: 760px){
+    .header{
+        grid-template-columns: auto;
+    }
+    
+    .logo{
+        margin-bottom: 20px;
+    }
+
+    .header nav a{
+        font-size: 1em;
+    }
+}
+
 .titulo{
     color: #B07DFB;
 }
@@ -212,7 +226,7 @@ ul{
     background-color: #B07BFB;
 }
 
-@media (max-width: 760px){
+@media only screen and (max-width: 760px){
     .sidenav a{
         display: inline-block;
         overflow-x: scroll;
