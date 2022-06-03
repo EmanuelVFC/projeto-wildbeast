@@ -165,13 +165,12 @@ ul{
     background-color: rgba(0, 0, 0, 0.1);
     padding: 10px;
     color: white;
-    margin: 8px;
     border-radius: 8px;
     transition-duration: 0.2s;
 }
 
 .navegacao ul li + li{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .navegacao ul li a:hover{
